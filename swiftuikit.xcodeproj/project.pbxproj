@@ -16,6 +16,7 @@
 		163C558B29E67B390083DEE5 /* swiftuikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C558A29E67B390083DEE5 /* swiftuikitUITests.swift */; };
 		163C558D29E67B390083DEE5 /* swiftuikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C558C29E67B390083DEE5 /* swiftuikitUITestsLaunchTests.swift */; };
 		163C559A29EE731E0083DEE5 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C559929EE731E0083DEE5 /* SecondScreen.swift */; };
+		163C559C29EE9D350083DEE5 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C559B29EE9D350083DEE5 /* ThirdScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		163C558A29E67B390083DEE5 /* swiftuikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuikitUITests.swift; sourceTree = "<group>"; };
 		163C558C29E67B390083DEE5 /* swiftuikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		163C559929EE731E0083DEE5 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		163C559B29EE9D350083DEE5 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				163C557429E67B390083DEE5 /* LaunchScreen.storyboard */,
 				163C557729E67B390083DEE5 /* Info.plist */,
 				163C559929EE731E0083DEE5 /* SecondScreen.swift */,
+				163C559B29EE9D350083DEE5 /* ThirdScreen.swift */,
 			);
 			path = swiftuikit;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				163C559A29EE731E0083DEE5 /* SecondScreen.swift in Sources */,
 				163C556E29E67B380083DEE5 /* FirstScreen.swift in Sources */,
+				163C559C29EE9D350083DEE5 /* ThirdScreen.swift in Sources */,
 				163C556A29E67B380083DEE5 /* AppDelegate.swift in Sources */,
 				163C556C29E67B380083DEE5 /* SceneDelegate.swift in Sources */,
 			);

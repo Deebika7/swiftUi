@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstScreen: UIViewController {
+class navigationController: UIViewController {
 
     //button instance
     let nextButton = UIButton()
@@ -42,10 +42,9 @@ class FirstScreen: UIViewController {
     }
     
     @objc func goToNextScreen() {
-        let nextScreen = SecondScreen()
-        nextScreen.title = "Second Screen"
+        let nextScreen = UIButtons()
+        nextScreen.title = " UI Buttons"
         navigationController?.pushViewController(nextScreen, animated: true)
-        
     }
     
     
