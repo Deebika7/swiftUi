@@ -9,7 +9,7 @@ import UIKit
 
 //UIVIEW
 
-class ThirdScreen: UIViewController, UITextInputTraits, UIScrollViewDelegate //UITextFieldDelegate
+class UIViews: UIViewController, UITextInputTraits, UIScrollViewDelegate //UITextFieldDelegate
 {
     
     let textField = UITextField()
@@ -73,7 +73,6 @@ class ThirdScreen: UIViewController, UITextInputTraits, UIScrollViewDelegate //U
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= keyboardSize.height/2
-                //print(keyboardSize.height)
             }
         }
     }

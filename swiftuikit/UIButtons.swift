@@ -9,7 +9,7 @@ import UIKit
 
 //BUTTONS UIButton -> UIControl -> UIView -> UIResponder ->NSObject.
 
-class SecondScreen: UIViewController {
+class UIButtons: UIViewController {
 
     let button = UIButton()
     

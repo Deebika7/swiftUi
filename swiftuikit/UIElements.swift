@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FifthScreen: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class UIElements: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     let items = ["Item 1", "Item 2", "Item 3"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class FifthScreen: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, 
         segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
         slider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
         //        setupIntrinsicView()
-        setuptableButton()
+        //setuptableButton()
     }
     //deprecated
     //    override var prefersStatusBarHidden: Bool {
@@ -59,85 +59,85 @@ class FifthScreen: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, 
         ])
     }
     
-    func setuptableButton() {
-        view.addSubview(tableVCButton)
-        view.addSubview(tableButton)
-        view.addSubview(collectionViewButton)
-        view.addSubview(compositionalViewButton)
-        collectionViewButton.addTarget(self, action: #selector(navToCollectionVC), for: .touchUpInside)
-        tableVCButton.addTarget(self, action: #selector(navigateToTableVC), for: .touchUpInside)
-        tableButton.addTarget(self, action: #selector(navigateToTableV), for: .touchUpInside)
-        compositionalViewButton.addTarget(self, action: #selector(navigateToCompostionalV), for: .touchUpInside)
-    }
+//    func setuptableButton() {
+//        view.addSubview(tableVCButton)
+//        view.addSubview(tableButton)
+//        view.addSubview(collectionViewButton)
+//        view.addSubview(compositionalViewButton)
+//        collectionViewButton.addTarget(self, action: #selector(navToCollectionVC), for: .touchUpInside)
+//        tableVCButton.addTarget(self, action: #selector(navigateToTableVC), for: .touchUpInside)
+//        tableButton.addTarget(self, action: #selector(navigateToTableV), for: .touchUpInside)
+//        compositionalViewButton.addTarget(self, action: #selector(navigateToCompostionalV), for: .touchUpInside)
+//    }
     
 //    @objc func navigateToCollectionV() {
 //        navigationController?.pushViewController(ViewController(), animated: true)
 //    }
     
     
-    @objc func navigateToCompostionalV() {
-        navigationController?.pushViewController(CompositonalLayout(), animated: true)
-    }
+//    @objc func navigateToCompostionalV() {
+//        navigationController?.pushViewController(CompositonalLayout(), animated: true)
+//    }
+//
+//    @objc func navigateToTableV() {
+//        navigationController?.pushViewController(TableVC(), animated: true)
+//    }
+//
+//    @objc func navToCollectionVC() {
+//        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: (view.frame.size.width/3)-3, height: (view.frame.size.width/3)-3)
+//        layout.minimumLineSpacing = 5 // space b/w cell (vertical)
+//        layout.minimumInteritemSpacing = 1 // space b/w cell (horizontal)
+//        // space b/w the frame and items
+//        layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+//        //CollectionVC
+//        let collectionVC = CollectionViewController(collectionViewLayout: layout)
+//        collectionVC.title = "Grid View Controller"
+//        collectionVC.navigationItem.largeTitleDisplayMode = .always
+////        collectionVC.navigationItem.titleView?.tintColor = .white
+//        //navVC
+//        //let navVC = UINavigationController(rootViewController: collectionVC)
+////        navVC.navigationBar.prefersLargeTitles = true
+//        //Presenting View Controller
+//        //present(navVC, animated: true)
+//        self.navigationController?.pushViewController(collectionVC, animated: true)
+//    }
+//
+//    @objc func navigateToTableVC() {
+//        navigationController?.pushViewController(tableViewController(), animated: true)
+//    }
     
-    @objc func navigateToTableV() {
-        navigationController?.pushViewController(TableVC(), animated: true)
-    }
+//    private let collectionViewButton: UIButton = {
+//        let collectionViewButton = UIButton()
+//        collectionViewButton.setTitle("CollectionView", for: .normal)
+//        collectionViewButton.frame = CGRect(x: 100, y: 710, width: 200, height: 40)
+//        collectionViewButton.backgroundColor = .blue
+//        return collectionViewButton
+//    }()
+//
+//    private let compositionalViewButton: UIButton = {
+//        let collectionViewButton = UIButton()
+//        collectionViewButton.setTitle("Compositional View", for: .normal)
+//        collectionViewButton.frame = CGRect(x: 100, y: 780, width: 200, height: 40)
+//        collectionViewButton.backgroundColor = .blue
+//        return collectionViewButton
+//    }()
     
-    @objc func navToCollectionVC() {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: (view.frame.size.width/3)-3, height: (view.frame.size.width/3)-3)
-        layout.minimumLineSpacing = 5 // space b/w cell (vertical)
-        layout.minimumInteritemSpacing = 1 // space b/w cell (horizontal)
-        // space b/w the frame and items
-        layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
-        //CollectionVC
-        let collectionVC = CollectionViewController(collectionViewLayout: layout)
-        collectionVC.title = "Grid View Controller"
-        collectionVC.navigationItem.largeTitleDisplayMode = .always
-//        collectionVC.navigationItem.titleView?.tintColor = .white
-        //navVC
-        //let navVC = UINavigationController(rootViewController: collectionVC)
-//        navVC.navigationBar.prefersLargeTitles = true
-        //Presenting View Controller
-        //present(navVC, animated: true)
-        self.navigationController?.pushViewController(collectionVC, animated: true)
-    }
-    
-    @objc func navigateToTableVC() {
-        navigationController?.pushViewController(tableViewController(), animated: true)
-    }
-    
-    private let collectionViewButton: UIButton = {
-        let collectionViewButton = UIButton()
-        collectionViewButton.setTitle("CollectionView", for: .normal)
-        collectionViewButton.frame = CGRect(x: 100, y: 710, width: 200, height: 40)
-        collectionViewButton.backgroundColor = .blue
-        return collectionViewButton
-    }()
-    
-    private let compositionalViewButton: UIButton = {
-        let collectionViewButton = UIButton()
-        collectionViewButton.setTitle("Compositional View", for: .normal)
-        collectionViewButton.frame = CGRect(x: 100, y: 780, width: 200, height: 40)
-        collectionViewButton.backgroundColor = .blue
-        return collectionViewButton
-    }()
-    
-    private let tableButton: UIButton = {
-        let tableButton = UIButton()
-        tableButton.setTitle("tableView", for: .normal)
-        tableButton.frame = CGRect(x: 100, y: 650, width: 200, height: 40)
-        tableButton.backgroundColor = .blue
-        return tableButton
-    }()
-    
-    private let tableVCButton: UIButton = {
-        let tableVCButton = UIButton()
-        tableVCButton.setTitle("tableVc", for: .normal)
-        tableVCButton.frame = CGRect(x: 100, y: 580, width: 200, height: 40)
-        tableVCButton.backgroundColor = .blue
-        return tableVCButton
-    }()
+//    private let tableButton: UIButton = {
+//        let tableButton = UIButton()
+//        tableButton.setTitle("tableView", for: .normal)
+//        tableButton.frame = CGRect(x: 100, y: 650, width: 200, height: 40)
+//        tableButton.backgroundColor = .blue
+//        return tableButton
+//    }()
+//
+//    private let tableVCButton: UIButton = {
+//        let tableVCButton = UIButton()
+//        tableVCButton.setTitle("tableVc", for: .normal)
+//        tableVCButton.frame = CGRect(x: 100, y: 580, width: 200, height: 40)
+//        tableVCButton.backgroundColor = .blue
+//        return tableVCButton
+//    }()
     
     private func setupIntrinsicView() {
         let intrinsicView = UIView()

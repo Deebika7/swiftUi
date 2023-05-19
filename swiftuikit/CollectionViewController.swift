@@ -1,8 +1,8 @@
 //
 //  CollectionViewController.swift
-//  swiftuikit
+//  PracticeCollectionView
 //
-//  Created by deebika-pt6680 on 02/05/23.
+//  Created by deebika-pt6680 on 27/04/23.
 //
 
 import UIKit
@@ -13,14 +13,11 @@ class CollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.backgroundColor = .label
     }
 
     /*
@@ -35,27 +32,59 @@ class CollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 12
     }
 
+    func configureCell(cell: UICollectionViewCell, forItemAtIndexPath: NSIndexPath) {
+        let label = UILabel()//frame: CGRect(x: 10, y: 10, width: 50, height: 20))
+        label.text = "test"
+        label.textColor = .label
+        cell.contentView.addSubview(label)
+        cell.layer.cornerRadius = 25
+        cell.backgroundColor = .label
+        cell.backgroundColor = UIColor.systemPink
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: cell.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: cell.centerYAnchor),
+            label.heightAnchor.constraint(equalToConstant: 20),
+            label.widthAnchor.constraint(equalToConstant: 50),
+//            cell.centerYAnchor.constraint(equalTo
+//            cell.centerYAnchor.constraint(equalTo: view)
+        ])
+    }
+
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        configureCell(cell: cell, forItemAtIndexPath: indexPath as NSIndexPath)
         return cell
     }
 
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print("selected \(indexPath.row) item")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {

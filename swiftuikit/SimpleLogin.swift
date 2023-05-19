@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FourthScreen: UIViewController {
+class SimpleLogin: UIViewController {
 // buttons, textfields
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class FourthScreen: UIViewController {
             loginButton.translatesAutoresizingMaskIntoConstraints = false
 
             //Set navagation bar Item
-            configureNavBarItem()
+//            configureNavBarItem()
         
             NSLayoutConstraint.activate([
                 emailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -43,15 +43,15 @@ class FourthScreen: UIViewController {
             ])
     }
     
-    private func configureNavBarItem() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNavigation))
-    }
+//    private func configureNavBarItem() {
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNavigation))
+//    }
     
-    @objc func addNavigation() {
-        let vc = FifthScreen()
-        vc.title = "UI Elements"
-        navigationController?.pushViewController(vc, animated: true)
-    }
+//    @objc func addNavigation() {
+//        let vc = FifthScreen()
+//        vc.title = "UI Elements"
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
     
     // Email or username input field
     private let emailTextField: UITextField = {

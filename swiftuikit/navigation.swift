@@ -7,7 +7,7 @@
 
 import UIKit
 
-class navigationController: UIViewController {
+class navigation: UIViewController {
 
     //button instance
     let nextButton = UIButton()

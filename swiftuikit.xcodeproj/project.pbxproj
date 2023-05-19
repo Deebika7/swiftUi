@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163062542A011054009E6428 /* SimpleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062532A011054009E6428 /* SimpleLogin.swift */; };
+		163062562A01108C009E6428 /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062552A01108C009E6428 /* UIElements.swift */; };
+		163062582A01110E009E6428 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062572A01110E009E6428 /* TableVC.swift */; };
+		1630625A2A01114A009E6428 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062592A01114A009E6428 /* tableViewController.swift */; };
+		1630625C2A011385009E6428 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630625B2A011385009E6428 /* CollectionViewController.swift */; };
+		163062602A01350B009E6428 /* CompositonalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630625F2A01350B009E6428 /* CompositonalLayout.swift */; };
+		163062622A013801009E6428 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062612A013801009E6428 /* List.swift */; };
+		163062642A022D00009E6428 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062632A022D00009E6428 /* ScrollView.swift */; };
 		163C556A29E67B380083DEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C556929E67B380083DEE5 /* AppDelegate.swift */; };
 		163C556C29E67B380083DEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C556B29E67B380083DEE5 /* SceneDelegate.swift */; };
-		163C556E29E67B380083DEE5 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C556D29E67B380083DEE5 /* FirstScreen.swift */; };
+		163C556E29E67B380083DEE5 /* navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C556D29E67B380083DEE5 /* navigation.swift */; };
 		163C557329E67B390083DEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163C557229E67B390083DEE5 /* Assets.xcassets */; };
 		163C557629E67B390083DEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163C557429E67B390083DEE5 /* LaunchScreen.storyboard */; };
 		163C558129E67B390083DEE5 /* swiftuikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C558029E67B390083DEE5 /* swiftuikitTests.swift */; };
 		163C558B29E67B390083DEE5 /* swiftuikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C558A29E67B390083DEE5 /* swiftuikitUITests.swift */; };
 		163C558D29E67B390083DEE5 /* swiftuikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C558C29E67B390083DEE5 /* swiftuikitUITestsLaunchTests.swift */; };
-		163C559A29EE731E0083DEE5 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C559929EE731E0083DEE5 /* SecondScreen.swift */; };
-		163C559C29EE9D350083DEE5 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C559B29EE9D350083DEE5 /* ThirdScreen.swift */; };
+		163C559A29EE731E0083DEE5 /* UIButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C559929EE731E0083DEE5 /* UIButtons.swift */; };
+		163C559C29EE9D350083DEE5 /* UIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C559B29EE9D350083DEE5 /* UIViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		163062532A011054009E6428 /* SimpleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLogin.swift; sourceTree = "<group>"; };
+		163062552A01108C009E6428 /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		163062572A01110E009E6428 /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
+		163062592A01114A009E6428 /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+		1630625B2A011385009E6428 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1630625F2A01350B009E6428 /* CompositonalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositonalLayout.swift; sourceTree = "<group>"; };
+		163062612A013801009E6428 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		163062632A022D00009E6428 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		163C556629E67B380083DEE5 /* swiftuikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163C556929E67B380083DEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		163C556B29E67B380083DEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		163C556D29E67B380083DEE5 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		163C556D29E67B380083DEE5 /* navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation.swift; sourceTree = "<group>"; };
 		163C557229E67B390083DEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163C557529E67B390083DEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163C557729E67B390083DEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +65,8 @@
 		163C558629E67B390083DEE5 /* swiftuikitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftuikitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		163C558A29E67B390083DEE5 /* swiftuikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuikitUITests.swift; sourceTree = "<group>"; };
 		163C558C29E67B390083DEE5 /* swiftuikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		163C559929EE731E0083DEE5 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
-		163C559B29EE9D350083DEE5 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		163C559929EE731E0083DEE5 /* UIButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtons.swift; sourceTree = "<group>"; };
+		163C559B29EE9D350083DEE5 /* UIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +118,21 @@
 			isa = PBXGroup;
 			children = (
 				163C556929E67B380083DEE5 /* AppDelegate.swift */,
+				163062552A01108C009E6428 /* UIElements.swift */,
 				163C556B29E67B380083DEE5 /* SceneDelegate.swift */,
-				163C556D29E67B380083DEE5 /* FirstScreen.swift */,
+				163C556D29E67B380083DEE5 /* navigation.swift */,
 				163C557229E67B390083DEE5 /* Assets.xcassets */,
 				163C557429E67B390083DEE5 /* LaunchScreen.storyboard */,
 				163C557729E67B390083DEE5 /* Info.plist */,
-				163C559929EE731E0083DEE5 /* SecondScreen.swift */,
-				163C559B29EE9D350083DEE5 /* ThirdScreen.swift */,
+				163C559929EE731E0083DEE5 /* UIButtons.swift */,
+				163C559B29EE9D350083DEE5 /* UIViews.swift */,
+				163062532A011054009E6428 /* SimpleLogin.swift */,
+				163062572A01110E009E6428 /* TableVC.swift */,
+				163062592A01114A009E6428 /* tableViewController.swift */,
+				1630625B2A011385009E6428 /* CollectionViewController.swift */,
+				1630625F2A01350B009E6428 /* CompositonalLayout.swift */,
+				163062612A013801009E6428 /* List.swift */,
+				163062632A022D00009E6428 /* ScrollView.swift */,
 			);
 			path = swiftuikit;
 			sourceTree = "<group>";
@@ -260,9 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163C559A29EE731E0083DEE5 /* SecondScreen.swift in Sources */,
-				163C556E29E67B380083DEE5 /* FirstScreen.swift in Sources */,
-				163C559C29EE9D350083DEE5 /* ThirdScreen.swift in Sources */,
+				163062562A01108C009E6428 /* UIElements.swift in Sources */,
+				163062582A01110E009E6428 /* TableVC.swift in Sources */,
+				163C559A29EE731E0083DEE5 /* UIButtons.swift in Sources */,
+				163062542A011054009E6428 /* SimpleLogin.swift in Sources */,
+				163062602A01350B009E6428 /* CompositonalLayout.swift in Sources */,
+				163062622A013801009E6428 /* List.swift in Sources */,
+				1630625C2A011385009E6428 /* CollectionViewController.swift in Sources */,
+				163062642A022D00009E6428 /* ScrollView.swift in Sources */,
+				163C556E29E67B380083DEE5 /* navigation.swift in Sources */,
+				163C559C29EE9D350083DEE5 /* UIViews.swift in Sources */,
+				1630625A2A01114A009E6428 /* tableViewController.swift in Sources */,
 				163C556A29E67B380083DEE5 /* AppDelegate.swift in Sources */,
 				163C556C29E67B380083DEE5 /* SceneDelegate.swift in Sources */,
 			);
@@ -433,6 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ARJXUTB326;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = swiftuikit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,7 +477,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.swiftuikit;
+				PRODUCT_BUNDLE_IDENTIFIER = deebika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,6 +492,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ARJXUTB326;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = swiftuikit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.swiftuikit;
+				PRODUCT_BUNDLE_IDENTIFIER = deebika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
